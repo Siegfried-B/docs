@@ -1,9 +1,9 @@
 ---
 id: iot-token
-title: Helium IOT Network Token
+title: Helium IoT Network Token
 pagination_label: IOT Token
 sidebar_label: IOT Token
-description: Helium IOT Network Token Documentation
+description: Helium IoT Network Token Documentation
 image: https://docs.helium.com/img/link-image.png
 slug: /helium-tokens/iot
 ---
@@ -15,9 +15,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 IOT is the protocol token of the [Helium IoT Network](/lorawan-on-helium). IOT was introduced to the
 Helium Network with the community proposal
 [HIP-52](https://github.com/helium/HIP/blob/main/0052-iot-dao.md) and is further defined in
-subsequent HIPs[^1] [^2] [^3] [^4].
-
-The IOT token is mined by LoRaWAN Hotspots through both data transfer as well as Proof of Coverage.
+subsequent HIPs<sup>(</sup>[^1]<sup>,</sup>[^2]<sup>,</sup>[^3]<sup>,</sup>[^4]<sup>)</sup>. The
+first IOT tokens were minted following the Solana migration on April 18, 2023.
 
 [^1]:
     [HIP-70: Scaling the Helium Network](https://github.com/helium/HIP/blob/main/0070-scaling-helium.md)
@@ -29,16 +28,23 @@ The IOT token is mined by LoRaWAN Hotspots through both data transfer as well as
 [^4]:
     [HIP-80: Simplifying DAO Utility Score](https://github.com/helium/HIP/blob/main/0080-simplifying-dao-utility-score.md)
 
-The first IOT tokens were minted following the Solana migration on April 18, 2023.  
+The IOT token is mined by LoRaWAN Hotspots through both data transfer proceeds as well as Proof of
+Coverage.
+
 The mint address for IOT is
 [`iotEVVZLEywoTn1QdwNPddxPWszn3zFhEot3MfL9fns`](https://explorer.solana.com/address/iotEVVZLEywoTn1QdwNPddxPWszn3zFhEot3MfL9fns)
+on the Solana blockchain.
 
-## Treasury
+## Redemption for HNT
 
-The Treasury is funded by activity within epochs. It is your right as a Token Holder to redeem IOT
-for HNT. This redemption will be determined by a redemption ratio that is set algorithmically by the
-Treasury swap contacts. This function is built into the structure of the subDAOs but other Market
-Makers may also support this function.
+Protocol tokens like IOT will always be backed by HNT and will convert to HNT. To enable this, each
+network within the Helium Network is allocated a pool of HNT based on the Network Utility Score. The
+redemption ratio is set algorithmically by the treasury swap contacts based on this Network Utility
+Score.
+
+The [Helium Wallet App](/wallets/helium-wallet-app) serves as the primary platform for exchanging
+IOT to HNT. This transaction can also be performed directly through the Solana blockchain using the
+open source tooling found in the Helium GitHub repositories.
 
 ## Token Allocation
 
